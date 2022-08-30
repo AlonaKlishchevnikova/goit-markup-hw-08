@@ -1,0 +1,71 @@
+//--------------------------------------------------logo-------------------------------------------------
+
+$dark-text: #000000;
+$light-text: #ffffff;
+
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme {
+        color: $dark-text;
+    }
+
+    @else {
+        color: $light-text;
+    }
+}
+
+.logo-theme {
+    @include theme-colors($light-theme: true);
+
+    footer & {
+        @include theme-colors($light-theme: false);
+    }
+}
+
+//------------------------------------------------social-link----------------------------------------------
+
+$dark-background-color: rgba(255, 255, 255, 0.1);
+$dark-fill: var(--secondary-text-color);
+$light-background-color: var(--primary-white-color);
+$light-fill: #AFB1B8;
+
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme {
+        background-color: $light-background-color;
+        fill: $light-fill;
+
+        &:hover,
+        &:focus {
+            fill: #FFFFFF;
+        }
+    }
+
+    @else {
+        background-color: $dark-background-color;
+        fill: $dark-fill;
+        ;
+    }
+}
+.social__link {
+    @include theme-colors($light-theme: true);
+
+    footer & {
+        @include theme-colors($light-theme: false);
+    }
+}
+//--------------------------------------------fonts-----------------------------------
+@mixin font ($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+
+@mixin retina {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}

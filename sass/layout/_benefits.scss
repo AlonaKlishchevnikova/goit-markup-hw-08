@@ -1,0 +1,36 @@
+.benefits {
+@include wadding ();
+}
+
+.benefits__list {
+    @extend %list;
+}
+.benefits__item{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .benefits__item {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits__item {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+.benefits__card {
+    display: flex;
+    height: 120px;
+    background-color: var(--button-grey-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.benefits__text {
+    @include font (null, 14px, 1.71, 0.03em);
+}

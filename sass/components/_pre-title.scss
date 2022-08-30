@@ -1,0 +1,24 @@
+.benefits__pre-title {
+    @extend %pre-title;
+    margin-bottom: 10px;
+
+}
+
+.social__pre-title {
+    @extend %pre-title;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .social__pre-title {
+        justify-content: left;
+    }
+}
+
+%pre-title {
+    @include font (700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+}

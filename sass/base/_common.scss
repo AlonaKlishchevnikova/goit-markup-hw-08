@@ -1,0 +1,17 @@
+body {
+    background-color: var(--primary-white-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

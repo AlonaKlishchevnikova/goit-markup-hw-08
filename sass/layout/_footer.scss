@@ -1,0 +1,60 @@
+.footer {
+    background-color: var(--primary-grey-color);
+    @include wadding (60px,60px);
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 60px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+      justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact {
+        gap: 70px;
+    }
+}
+
+.contact__catalogue{
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    .contact__catalogue {
+        text-align: left;
+    }
+}
+
+address {
+    @include font (null, 14px, 1.71, 0.03em);
+    font-family: inherit;
+    font-style: normal;
+    color: var(--secondary-text-color);
+}
+
+
+.contact__item {
+    margin-bottom: 9px;
+  
+}
+
+.contact__link {
+@include font (null, 14px, 1.71, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact__address {
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+
+
+

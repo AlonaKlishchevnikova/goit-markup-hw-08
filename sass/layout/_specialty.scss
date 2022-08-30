@@ -1,0 +1,35 @@
+.specialty {
+    @include wadding (none,);
+   display: none;
+   
+}
+
+@media screen and (min-width: 1200px) {
+    .specialty {
+    display: flex ;
+    }
+}
+
+.specialty__list {
+    @extend %list;
+}
+
+.specialty__item {
+    position: relative;
+}
+
+.specialty__item-overlay {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    @include font (700, 14px, 1.14, 0.03em);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
