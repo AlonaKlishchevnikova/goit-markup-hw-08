@@ -523,23 +523,28 @@ footer .social__link {
   right: 16px;
 }
 
+.mobile-menu-content {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-navigation__link {
   display: flex;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  padding-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 .mobile-navigation__link:hover, .mobile-navigation__link:focus, .mobile-navigation__link:active {
   color: var(--accent-color);
-}
-
-.mobile-connect {
-  margin-top: 302px;
 }
 
 .mobile-connect__link {
@@ -621,7 +626,26 @@ footer .social__link {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.customers__title, .specialty__title, .team__title {
+.customers__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.specialty__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -630,6 +654,25 @@ footer .social__link {
   margin-bottom: 50px;
 }
 
+.team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 .logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -639,10 +682,16 @@ footer .social__link {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 0;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 14px;
+  padding-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 .benefits__pre-title {
   margin-bottom: 10px;
 }
@@ -796,8 +845,8 @@ footer .social__link {
 .concept {
   background-color: var(--primary-grey-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bg-mob.webp);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -813,6 +862,8 @@ footer .social__link {
 @media screen and (min-width: 768px) {
   .concept {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bg-tab.webp);
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -823,6 +874,8 @@ footer .social__link {
 @media screen and (min-width: 1200px) {
   .concept {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background_image.png);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -852,10 +905,22 @@ footer .social__link {
   }
 }
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .benefits__item {
   width: 100%;
 }
@@ -921,11 +986,23 @@ footer .social__link {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F5F4FA;
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .team__item {
   background-color: var(--primary-white-color);
   border-bottom-right-radius: 4px;
@@ -969,16 +1046,28 @@ footer .social__link {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .portfolio__button-list {
   display: flex;
   gap: 8px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   justify-content: left;
   flex-wrap: wrap;
 }
@@ -986,6 +1075,12 @@ footer .social__link {
 @media screen and (min-width: 768px) {
   .portfolio__button-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__button-list {
+    margin-bottom: 50px;
   }
 }
 .portfolio__button {
@@ -1031,9 +1126,8 @@ footer .social__link {
   transform: translate(0%, 0%);
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   text-align: left;
   padding-left: 24px;
@@ -1076,10 +1170,22 @@ footer .social__link {
   }
 }
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .customer__link {
   display: flex;
   height: 92px;

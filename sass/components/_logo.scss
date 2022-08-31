@@ -4,7 +4,14 @@
     @include font (700, 26px, 1.19, 0.03em);
     color: var(--accent-color);
     margin-right: 0;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        padding-top: 24px;
+            padding-bottom: 25px;
+    }
 }
 

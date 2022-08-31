@@ -1,10 +1,11 @@
 .concept {
+
     background-color: var(--primary-grey-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/header-bg-mob.webp);
         @include retina {background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/header-bg-mob-2x.webp);}
-    @include wadding (200px, 200px);
+        @include wadding (118px, 118px);
     max-width: 1600px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -14,22 +15,28 @@
 
 @media screen and (min-width: 768px) {
     .concept {
+        
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/header-bg-tab.webp);
                 @include retina {
                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                             url(../images/header-bg-tab-2x.webp);}
+             @include wadding (118px, 118px);
 }
+
 }
 @media screen and (min-width: 1200px) {
     .concept{
+       
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../images/background_image.png);
                 @include retina {
                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                             url(../images/header-bg-2x.webp);
                     }
+                 @include wadding (200px, 200px);
     }
+        
 }
 
 .concept__title {
